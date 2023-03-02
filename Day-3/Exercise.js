@@ -43,7 +43,7 @@ console.log("===================================================================
   let cmToKm = 100000
 
   let konversi = centimeter * cmToKm;
-  console.log(`10 cm sama dengan ${konversi} km`);
+  console.log(`${centimeter} cm sama dengan ${konversi} km`);
 
 
 //   ● Write a code to remove the first occurrence of a given “search string” from a string

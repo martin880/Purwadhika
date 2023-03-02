@@ -4,3 +4,13 @@ console.log("===================================================================
 let rupiah = new Intl.NumberFormat('id-ID',{style: 'currency', currency: "IDR"});
 
 console.log(rupiah.format(1000));
+
+let str = "martin";
+
+let reverse = str.split('').reverse().join('');
+console.log(reverse);
+if(str === reverse){
+    console.log(`${str} adalah palindrom`); // true
+}else{
+    console.log(`${str} bukan palindrom`); // false
+}
