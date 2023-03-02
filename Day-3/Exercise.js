@@ -20,7 +20,7 @@ console.log("===================================================================
 
 let str = "madam";
 
-let reverse = str.split('').reverse().join('');
+let reverse = str.split('').reverse().join('').toLowerCase();
 if(str === reverse){
     console.log(`${str} adalah palindrom`); // true
 }else{
@@ -33,7 +33,7 @@ if(str === reverse){
 console.log("=======================================================================");
 
   function convert(kilometer){
-    return kilometer * 100000;
+    return kilometer / 100000;
   }
 
   console.log(`10 cm sama dengan ${convert(10)} kilometer`);
@@ -42,7 +42,7 @@ console.log("===================================================================
   let centimeter = 10;
   let cmToKm = 100000
 
-  let konversi = centimeter * cmToKm;
+  let konversi = centimeter / cmToKm;
   console.log(`${centimeter} cm sama dengan ${konversi} km`);
 
 
