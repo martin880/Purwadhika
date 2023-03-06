@@ -22,7 +22,7 @@ function trianglePattern(height) {
       for (let j = 0; j < i; j++) {
 
         // Tambahkan angka saat ini ke baris
-        row += num.toString().padStart(2, '0') + " ";
+        row = row + num.toString().padStart(2, '0') + " ";
 
         // Angka dinaikan
         num++;
@@ -33,7 +33,7 @@ function trianglePattern(height) {
     }
 }
 
-console.log(trianglePattern(4));
+console.log(trianglePattern(10));
 
 console.log("==================================================2=====================================================================");
 
@@ -42,7 +42,7 @@ console.log("==================================================2================
 // "FizzBuzz".
 // Parameters : n → total looping
 
-function fizzBuzz(n) {
+const fizzBuzz = (n) => {
     for (let i = 1; i <= n; i++) { // looping setiap baris
       if (i % 3 === 0 && i % 5 === 0) { // Periksa apakah angka tersebut habis dibagi 3 dan 5
         console.log("FizzBuzz");
