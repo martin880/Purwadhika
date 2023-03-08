@@ -120,3 +120,24 @@
 
 // let baju = new Baju("Oval", "Pink", "L", "Cotton");
 // console.log(baju); 
+
+
+// class DB {
+//     static #connection = "";
+
+//     static #initializeConnection(){
+//         const randomNUm = Math.ceil(Math.random() * 100);
+//         DB.#connection = `New Database Connection ${randomNUm}`;
+//     }
+
+//     static getConnection() {
+//         if(!DB.#connection){
+//             DB.#initializeConnection();
+//         }
+
+//         return DB.#connection;
+//     }
+// }
+
+// console.log(DB.getConnection());
+// console.log(DB.getConnection());

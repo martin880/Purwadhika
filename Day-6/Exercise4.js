@@ -45,7 +45,7 @@ class Product {
         products: this.products
       };
     }
-  }
+  };
   
   const apple = new Product("Apple", 1200);
   const orange = new Product("Orange", 2100);
