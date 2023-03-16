@@ -94,3 +94,21 @@ function pascalTriangel(numRows) {
 }
 
 console.log(pascalTriangel(5));
+
+// 	Fungsi pascalTriangel(numRows) digunakan untuk menghasilkan segitiga Pascal dengan jumlah baris numRows. Segitiga Pascal adalah pola angka yang dibuat dengan menambahkan dua angka di atasnya untuk membuat angka di bawahnya. Baris pertama dari segitiga Pascal berisi angka tunggal 1, sedangkan setiap baris berikutnya dibuat dengan menambahkan dua angka yang berdekatan dari baris di atasnya.
+
+// Fungsi ini menggunakan pendekatan algoritma nested loop untuk menghasilkan segitiga Pascal. Pertama, fungsi membuat variabel i dan j untuk digunakan sebagai iterator untuk loop for. Kemudian, variabel result diinisialisasi sebagai array kosong.
+
+// Selanjutnya, fungsi memulai loop for pertama dengan iterator i yang dimulai dari 0 hingga numRows. Pada setiap iterasi, fungsi menambahkan array baru ke dalam result dengan panjang i + 1. Kemudian, fungsi memulai loop for kedua dengan iterator j yang dimulai dari 0 hingga i.
+
+// Dalam loop for kedua, fungsi menggunakan kondisi if untuk menentukan apakah j sama dengan 0 atau i. Jika ya, maka nilai result[i][j] diset ke 1 karena baris pertama selalu berisi angka 1. Jika tidak, maka nilai result[i][j] dihitung dengan menambahkan dua angka yang berdekatan dari baris di atasnya, yaitu result[i - 1][j - 1] dan result[i - 1][j]. Setelah loop for kedua selesai, fungsi mengembalikan result.
+
+// Pada contoh penggunaan fungsi, kita memanggil pascalTriangel(5) dan mencetak hasilnya menggunakan console.log. Ini akan menghasilkan segitiga Pascal dengan lima baris, yaitu:
+
+// 1
+// 1 1
+// 1 2 1
+// 1 3 3 1
+// 1 4 6 4 1
+
+// Setiap angka dalam segitiga Pascal dihitung dengan cara menambahkan dua angka yang berdekatan dari baris di atasnya. Misalnya, angka 3 pada baris keempat dihitung dengan menambahkan 1 dan 2 dari baris di atasnya. Angka-angka dalam segitiga Pascal memiliki banyak aplikasi dalam matematika dan ilmu komputer, seperti dalam kombinatorika dan analisis algoritma.
